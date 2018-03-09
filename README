@@ -1,0 +1,28 @@
+This is a Spring boot project
+
+To Run
+=============================
+
+mvn spring-boot:run
+
+localhost:8080 will show a simple AngularJs UI to list Stocks.
+
+localhost:8080/swagger-ui.html will show the API documentation for REST APIs.
+
+API
+====================================
+URL-GET /api/stocks
+Descriptiom- Return All Stocks
+
+URL-GET /api/stocks/{id}
+Description- Return stock detail of specified stock.Please not this also return a Etag value which is needed to be
+             passed in PUT request.
+             
+URL- PUT /api/stocks/{id}
+Description- Update specified stock
+
+URL POST /api/stocks
+Description- Create a new Stock
+
+URL DELETE /api/stocks/{id}
+Description- DELETE specified stock.

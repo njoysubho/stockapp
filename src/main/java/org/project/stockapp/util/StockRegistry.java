@@ -20,7 +20,7 @@ public class StockRegistry {
 		stockMap.put(1,new Stock(1,"ABCCorp",120,Currency.getInstance("USD")));
 		stockMap.put(2,new Stock(2,"XYZLtd", 80,Currency.getInstance("USD")));
 		stockMap.put(3,new Stock(3,"DEFLtd", 180,Currency.getInstance("USD")));
-		stockMap.put(4,new Stock(2,"GHILtd", 800,Currency.getInstance("USD")));		
+		stockMap.put(4,new Stock(4,"GHILtd", 800,Currency.getInstance("USD")));		
 	}
 
 	public Map<Integer, Stock> getStockMap() {

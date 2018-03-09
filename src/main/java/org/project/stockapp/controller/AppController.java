@@ -8,6 +8,6 @@ public class AppController {
 
 	@RequestMapping("/")
 	public String listStockPage(){
-		return "index";
+		return "index.html";
 	}
 }

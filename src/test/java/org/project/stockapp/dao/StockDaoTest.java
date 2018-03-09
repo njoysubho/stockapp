@@ -58,11 +58,11 @@ public class StockDaoTest {
 		Mockito.when(stockRegistry.getStockById(1)).thenReturn(testStock);
 		Assert.assertEquals(testStock, stockDao.findStockById(1));
 	}
-	@Test
+	@Test(expected=StockNotFoundException.class)
 	public void testGetStockByIdNull() throws StockNotFoundException {
 		Stock testStock = new Stock(1, "test", 100, Currency.getInstance("USD"));
 		Mockito.when(stockRegistry.getStockById(1)).thenReturn(null);
-		Assert.assertNull(stockDao.findStockById(1));
+	    stockDao.findStockById(1);
 	}
 
 }
